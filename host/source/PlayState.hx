@@ -20,6 +20,8 @@ class PlayState extends FlxState
 		inst.x = 320;
 		inst.y = 240;
 
+		inst.oninit();
+
 		//Add sprite to scene
 		add(cast(inst, FlxBasic));
 	}
