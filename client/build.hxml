@@ -1,0 +1,22 @@
+-cp source
+-cp ../host/source
+
+#openfl/flixel stuff
+-lib flixel
+-lib flixel-addons
+-lib openfl
+-lib lime
+-D FLX_DRAW_QUADS
+-D FLX_NO_DEBUG
+-D FLX_NO_TOUCH
+-D FLX_KEYBOARD
+--remap flash:openfl
+--macro exclude('flixel')
+
+#sources
+-main Client.hx
+ClientSprite.hx
+
+
+-D dll_import=../host/export_classes.info
+-cppia client.cppia
